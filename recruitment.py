@@ -25,15 +25,21 @@ def main():
 	s=input("Choose a skill from above by entering its number:")
 	s=int(s)
 	cv["skills"].insert(0, skills[s-1])
+
+#	cv["skills"]=skills[s-1]
+
 	s2=input("Choose another skill from above by entering its number:")
 	s2=int(s2)
+	#thislist.insert(1, "orange")
 	cv["skills"].insert(1, skills[s2-1])
 	#print(cv["skills"])
-	if int(cv["age"])>=25 and int(cv["age"])<=40 and int(cv["experience"])>5 and "6.Eating" in cv["skills"] :
+	#print(cv["skills"])
+	if int(cv["age"])>=25 and int(cv["age"])<=40 and int(cv["experience"])>5 and "6. Eating" in cv["skills"] :
 		 print("You have been accepted,"+cv["name"])
 		 #"apple" in thislist
 	else:
 		 print("reject")
+
 
 if __name__ == '__main__':
 	main()
